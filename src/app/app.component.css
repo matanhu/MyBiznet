@@ -1,0 +1,30 @@
+.all-screen {
+  height: 100vh;
+}
+
+.header {
+  min-height: 60px;
+  padding: 10px;
+  margin: 0;
+}
+
+.header .title, .header .select-number {
+  padding: 0;
+}
+
+.header .title {
+  text-align: center;
+}
+
+.sidebar {
+  background-color: #222b38;
+  padding: 8px 0;
+}
+.main-container {
+  margin: 0;
+}
+.pages-container {
+  padding: 1em;
+  background-color: #edf1f2;
+  /* width: 100vw; */
+}

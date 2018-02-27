@@ -1,0 +1,34 @@
+<p>
+  status-page works!
+</p>
+<div class="row">
+  <div class="col-sm-7">
+    <div class="row">
+      <div class="col-sm-3">
+        <app-circle [isSuccess]="true" [labelText]="'מסונכן לבזק'"></app-circle>
+      </div>
+      <div class="col-sm-1"></div>
+      <div class="col-sm-3">
+        <app-circle [isSuccess]="true" [labelText]="'מחובר לספק האינטרנט'"></app-circle>
+      </div>
+      <div class="col-sm-1"></div>
+      <div class="col-sm-3">
+        <app-circle [isSuccess]="false" [labelText]="'הנתב אינו מחובר לאינטרנט'"></app-circle>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-3">
+    <div class="row text-container">
+      <div class="col-sm-6">ספק אינטרנט</div>
+      <div class="col-sm-6">בזק בינלאומי</div>
+    </div>
+    <div class="row text-container">
+      <div class="col-sm-6">ספק אינטרנט</div>
+      <div class="col-sm-6">בזק בינלאומי</div>
+    </div>
+    <div class="row text-container">
+      <div class="col-sm-6">ספק אינטרנט</div>
+      <div class="col-sm-6">בזק בינלאומי</div>
+    </div>
+  </div>
+</div>

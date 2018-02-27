@@ -1,0 +1,22 @@
+<select [(ngModel)]="type" (change)="onTypeChanged()">
+  <option [value]="'wifi'">wifi</option>
+  <option [value]="'pf_nat_rule'">pf_nat_rule</option>
+</select>
+
+<form [formGroup]="formTest" (submit)="testSubmit()" *ngIf="formTest">
+  <div [formArrayName]="type">
+    <div *ngFor="let pf of formTest.controls[type].controls; let idx = index" [formGroupName]="idx">
+        <h4>Invoice Row #{{ idx + 1 }}</h4>
+        <!-- <div class="form-group">
+          <label>Item Name</label>
+          <input formControlName="name" class="form-control">
+        </div> -->
+        <div *ngFor="let e of pf.controls | keys">
+            <input [formControlName]="e" placeholder="Experience">
+            {{e}}
+         </div>
+    </div>
+  </div>
+  <button type="submit">Submit</button>
+  <button type="button" (click)="AddPf()">AddPf</button>
+</form>

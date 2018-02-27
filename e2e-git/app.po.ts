@@ -1,4 +1,4 @@
-import { browser, by, element } from 'protractor';
+import { browser, element, by } from 'protractor/globals';
 
 export class Angular2EndToEndPage {
   navigateTo() {
